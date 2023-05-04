@@ -1,0 +1,5 @@
+Field,Type,Null,Key,Default,Extra
+emp_id,"int unsigned",NO,PRI,NULL,auto_increment
+emp_name,varchar(50),NO,,NULL,
+salary,double,NO,,NULL,
+startdate,date,NO,,NULL,
