@@ -8,7 +8,7 @@ create table employee_payroll (emp_id int unsigned not null auto_increment,emp_n
 describe employee_payroll;
 
 ----------- UC3 ------------
-insert into employee_payroll (emp_name,salary,startdate) values ('ramesh','25000','2022-01-12'),('chandu','30000','2021-12-21'),('vinay','27000','2020-05-1');
+insert into employee_payroll (emp_name,gender,salary,startdate) values ('ramesh','25000','2022-01-12'),('chandu','30000','2021-12-21'),('vinay','27000','2020-05-1');
 
 ------------ UC4 -------------
 select * from employee_payroll;
@@ -16,3 +16,11 @@ select * from employee_payroll;
 --------------- UC5 ----------
 select salary from employee_payroll where emp_name = 'chandu';
 select * from employee_payroll where startdate between cast('2021-01-01' as date) and date(now());
+
+------------- UC6 -----------
+alter table employee_payroll add gender char(1) after emp_name;
+describe employee_payroll;
+update employee_payroll set gender = 'M' where emp_id ='1';
+update employee_payroll set gender = 'M' where emp_id ='2';
+update employee_payroll set gender = 'F' where emp_id ='3';
+select * from employee_payroll;
