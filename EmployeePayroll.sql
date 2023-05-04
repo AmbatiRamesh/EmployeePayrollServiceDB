@@ -9,3 +9,6 @@ describe employee_payroll;
 
 ----------- UC3 ------------
 insert into employee_payroll (emp_name,salary,startdate) values ('ramesh','25000','2022-01-12'),('chandu','30000','2021-12-21'),('vinay','27000','2020-05-1');
+
+------------ UC4 -------------
+select * from employee_payroll;
