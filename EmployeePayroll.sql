@@ -12,3 +12,7 @@ insert into employee_payroll (emp_name,salary,startdate) values ('ramesh','25000
 
 ------------ UC4 -------------
 select * from employee_payroll;
+
+--------------- UC5 ----------
+select salary from employee_payroll where emp_name = 'chandu';
+select * from employee_payroll where startdate between cast('2021-01-01' as date) and date(now());
