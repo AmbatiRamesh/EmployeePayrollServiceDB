@@ -24,3 +24,9 @@ update employee_payroll set gender = 'M' where emp_id ='1';
 update employee_payroll set gender = 'M' where emp_id ='2';
 update employee_payroll set gender = 'F' where emp_id ='3';
 select * from employee_payroll;
+
+-------------- UC7 -----------
+select sum(salary) from employee_payroll where gender ='M' group by gender;
+ select avg(salary) from employee_payroll where gender ='M' group by gender;
+ select min(salary) from employee_payroll where gender ='M' group by gender;
+ select max(salary) from employee_payroll where gender ='M' group by gender;
