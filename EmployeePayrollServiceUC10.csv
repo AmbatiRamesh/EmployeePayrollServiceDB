@@ -1,0 +1,8 @@
+emp_id,emp_name,phonenumber,address,department,gender,salary,deduction,taxable_pay,income_tax,net_pay,startdate
+1,ramesh,NULL,"6-23 near gogulamma temple",,M,25000,,NULL,NULL,NULL,2022-01-12
+2,chandu,NULL,"6-23 near gogulamma temple",,M,30000,,NULL,NULL,NULL,2021-12-21
+3,vinay,NULL,"6-23 near gogulamma temple",,F,27000,,NULL,NULL,NULL,2020-05-01
+4,ramesh,NULL,"6-23 near gogulamma temple",,M,25000,,NULL,NULL,NULL,2022-01-12
+5,chandu,NULL,"6-23 near gogulamma temple",,M,30000,,NULL,NULL,NULL,2021-12-21
+6,vinay,NULL,"6-23 near gogulamma temple",,F,27000,,NULL,NULL,NULL,2020-05-01
+7,ramesh,9640827483," 6-23 near gogulamma temple",HR,M,30000,2000,500,500,27000,2022-01-12

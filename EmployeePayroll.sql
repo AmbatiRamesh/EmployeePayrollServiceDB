@@ -44,3 +44,7 @@ select sum(salary) from employee_payroll where gender ='M' group by gender;
  alter table employee_payroll add net_pay varchar(150) after income_tax;
   select * from employee_payroll;
  
+ ---------------- UC10 -----------------
+ insert into employee_payroll (emp_name,phonenumber,address,department, gender,salary,deduction,taxable_pay,income_tax,net_pay,startdate) values ('ramesh','9640827483'
+	,' 6-23 near gogulamma temple','HR','M','30000','2000','500','500','27000','2022-01-12');
+ select * from employee_payroll;
