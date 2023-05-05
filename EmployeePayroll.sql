@@ -30,3 +30,9 @@ select sum(salary) from employee_payroll where gender ='M' group by gender;
  select avg(salary) from employee_payroll where gender ='M' group by gender;
  select min(salary) from employee_payroll where gender ='M' group by gender;
  select max(salary) from employee_payroll where gender ='M' group by gender;
+ 
+ ------------ UC8 ---------------
+ alter table employee_payroll add phonenumber long after emp_name;
+ alter table employee_payroll add address varchar(250) default '6-23 near gogulamma temple'after phonenumber;
+ alter table employee_payroll add department varchar(150) not null after address;
+ select * from employee_payroll;
