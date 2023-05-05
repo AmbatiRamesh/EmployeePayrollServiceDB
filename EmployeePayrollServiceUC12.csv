@@ -1,0 +1,7 @@
+Field,Type,Null,Key,Default,Extra
+emp_id,int,YES,MUL,NULL,
+basic_pay,mediumtext,YES,,NULL,
+deduction,mediumtext,YES,,NULL,
+taxable_pay,mediumtext,YES,,NULL,
+income_tax,mediumtext,YES,,NULL,
+net_pay,mediumtext,YES,,NULL,

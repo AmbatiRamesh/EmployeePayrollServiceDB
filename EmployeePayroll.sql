@@ -54,3 +54,14 @@ select sum(salary) from employee_payroll where gender ='M' group by gender;
  describe company;
  insert into company values (1,'nokia'),(2,'apple'),(3,'samsung'),(4,'tata'),(5,'infosys');
  select * from company;
+ 
+ ----------------- UC12 -----------
+ create table employee (emp_id int,emp_name varchar(150) not null,phonenumber long not null,company_id int , primary key(emp_id),foreign key (company_id)
+ references company(company_id));
+ describe employee;
+ alter table employee add address varchar(150) after phonenumber;
+ describe employee;
+ create table department (emp_id int,department_id int primary key, department_name varchar (150), foreign key(emp_id) references employee(emp_id));
+ describe department;
+ create table payroll (emp_id int ,basic_pay long ,deduction long,taxable_pay long,income_tax long,net_pay long ,foreign key (emp_id) references employee(emp_id));
+ describe payroll;
