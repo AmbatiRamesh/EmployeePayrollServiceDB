@@ -36,3 +36,11 @@ select sum(salary) from employee_payroll where gender ='M' group by gender;
  alter table employee_payroll add address varchar(250) default '6-23 near gogulamma temple'after phonenumber;
  alter table employee_payroll add department varchar(150) not null after address;
  select * from employee_payroll;
+ 
+ ------------- UC9 --------------
+ alter table employee_payroll add deduction varchar(150) not null after salary;
+ alter table employee_payroll add taxable_pay varchar(150) after deduction;
+ alter table employee_payroll add income_tax varchar(150) after taxable_pay;
+ alter table employee_payroll add net_pay varchar(150) after income_tax;
+  select * from employee_payroll;
+ 
