@@ -45,6 +45,12 @@ select sum(salary) from employee_payroll where gender ='M' group by gender;
   select * from employee_payroll;
  
  ---------------- UC10 -----------------
- insert into employee_payroll (emp_name,phonenumber,address,department, gender,salary,deduction,taxable_pay,income_tax,net_pay,startdate) values ('ramesh','9640827483'
+ insert into employee_payroll (emp_name,phonenumber,address,department, gender,salary,deduction,taxable_pay,income_tax,net_pay,startdate) values ('virat','9640827483'
 	,' 6-23 near gogulamma temple','HR','M','30000','2000','500','500','27000','2022-01-12');
- select * from employee_payroll;
+ select * from employee_payroll where emp_name ='virat';
+ 
+ ----------------- UC11 ------------
+ create table company (company_id int not null,company_name varchar(150),primary key(company_id,company_name));
+ describe company;
+ insert into company values (1,'nokia'),(2,'apple'),(3,'samsung'),(4,'tata'),(5,'infosys');
+ select * from company;
